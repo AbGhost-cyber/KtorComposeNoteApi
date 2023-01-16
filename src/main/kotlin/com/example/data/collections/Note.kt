@@ -6,8 +6,8 @@ import org.bson.types.ObjectId
 
 @Serializable
 data class Note(
-    val title: String,
-    val content: String,
+    val title: String? = null,
+    val content: String? = null,
     val date: Long,
     val color: String,
     @BsonId
